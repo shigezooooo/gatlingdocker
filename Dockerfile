@@ -7,7 +7,7 @@ ENV LANG C.UTF-8
 # Gatlingのソースを解凍するのに必要なパッケージを取得
 RUN apt-get update -y
 RUN apt-get upgrade -y
-RUN apt-get install -y wget bsdtar
+RUN apt-get install -y wget libarchive-tools
 
 # workディレクトリを作成し、移動
 RUN mkdir /work
